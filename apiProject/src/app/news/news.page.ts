@@ -14,7 +14,7 @@ export class NewsPage implements OnInit {
 
   ngOnInit() {
     this.izindabaService
-    .getData('everything?q=apple&from=2021-03-02&to=2021-03-02&sortBy=popularity')
+    .getData('everything?q=apple&from=2021-03-04&to=2022-03-02&sortBy=popularity')
     .subscribe(data => {
         console.log(data);
         this.data = data;
